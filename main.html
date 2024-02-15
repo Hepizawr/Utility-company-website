@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ТОВ «Газова компанія»</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!--    <script async src="js/mainScript.js"></script>-->
+<!--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+    <script async src="js/jquery-3.7.1.js"></script>
+    <script async src="js/JQuery.js"></script>
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            padding-top: 5px;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            min-width: 200px;
+            padding: 5px;
+            display: block;
+        }
+
+        #dropdown-content-1 {
+            /*position: relative;*/
+            /*z-index: 1;*/
+            border: dashed;
+        }
+
+        #dropdown-content-2 {
+            position: relative;
+            bottom: 10px;
+            left: 30px;
+            z-index: 2;
+            border: dashed;
+        }
+
+        #dropdown-content-3 {
+            position: relative;
+            bottom: 20px;
+            left: 60px;
+            z-index: 3;
+            border: dashed;
+        }
+
+        .dropdown-content a:hover {
+            color: #00a0df;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <a id="logo" href="main.html">
+        <img src="img/Logo img.png" alt="logo" height="40" width="40"/>
+        <b>ТОВ «Газова компанія»</b>
+    </a>
+
+    <a id="personal-cabinet-button" href="personal%20cabinet.html">Особовий кабінет</a>
+
+    <nav>
+        <a href="#about-company">О компанії</a>
+        <div class="dropdown">
+            <a class="dropbtn" href="#">Клієнтам</a>
+            <div class="dropdown-content">
+                <a id="dropdown-content-1" href="">Надіслати заявку</a>
+                <a id="dropdown-content-2" href="#">Переглянути статус заявки</a>
+                <a id="dropdown-content-3" href="#form">Написати нам</a>
+            </div>
+        </div>
+        <a id="dfnslkfnlskdfnlskdnflskd" href="#">Контакти</a>
+        <a href="#">Новини</a>
+        <a href="#">FAQ</a>
+    </nav>
+</header>
+
+
+<div class="pop_up" id="pop_up_task">
+    <div class="pop_up_container">
+        <div class="pop_up_header">
+            Оплата за послуги
+            <div class="pop_up_close" id="pop_up_task_close">
+                &#10006
+            </div>
+        </div>
+        <div class="pop_up_body">
+            <form id="form_task">
+                <div class="pop_up_form_block">
+                    <label for="task_arr">Введіть масив числел</label>
+                    <input type="text" name="task_arr" id="task_arr" placeholder="Введіть числа" required>
+                </div>
+
+                <button type="submit" id="pop_up_bill_button"><b>Відсотрувати</b></button>
+
+                <div class="pop_up_form_block">
+                    <label for="result_task">Відсортоввний масив</label>
+                    <input type="text" name="result_task" id="result_task" value="" readonly>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<main>
+    <section id="about-company">
+        <img src="https://gas.ua/Content/Entities/PageBlockSimpleInHalfTextImage/1/image" alt="Про компанію"
+             title="Про компанію" height="300"/>
+
+        <h1>Про Компанію:
+            <br/>
+            місія, мета, цінності
+        </h1>
+
+        <p>
+            <em>
+                ТОВ «Газопостачальна компанія «...»» – це провідна компанія, яка є надійним постачальником газу
+                побутовим клієнтам, а також відповідальним постачальником газу та електричної енергії представникам
+                бізнесу та промисловим підприємствам нашої країни. Нашими клієнтами є лідери харчової, хімічної та
+                аграрної промисловості,
+                компанії зі сфери нерухомості, представники малого та середнього бізнесу тощо.
+            </em>
+        </p>
+
+        <p>
+            <u>
+                Візія компанії:
+            </u>
+            <br/>
+            забезпечувати безперебійне постачання газу та електричної енергії по всій території України за конкурентними
+            цінами,
+            надавати якісний та оперативний клієнтський сервіс. Будувати взаємовигідні довгострокові відносини з
+            клієнтами,
+            створювати гнучкі умови для співпраці із забезпечення постачання енергоресурсів за ринковими цінами.
+        </p>
+
+        <p>
+            <u>
+                Місія:
+            </u>
+            <br>
+            забезпечити людей національними енергетичними ресурсами та кращими енергоощадними рішеннями.
+        </p>
+
+        <p>
+            <u>
+                Цінності:
+            </u>
+            <br>
+            відкритість, безпека, ефективність, турбота про споживача.
+        </p>
+
+        Наші переваги:
+        <ol type="I">
+            <li>3.5 млн родин</li>
+            <li>1100+ співробітників</li>
+            <li>57 сучасних енергоофісів</li>
+            <li>15 років у сфері</li>
+        </ol>
+    </section>
+
+    <aside>
+        <div class="aside-block">
+            Компанія безперебійно та стабільно забезпечує газом понад 12,3 млн українських домогосподарств пропонуючи
+            населенню
+            один із найбільш доступних тарифів у країні.
+        </div>
+
+        <div class="aside-block">
+            ГК «...» поставляє блакитне паливо більш ніж 4,9 тис. представникам середнього і малого бізнесу по всій
+            Україні.
+        </div>
+
+        <div class="aside-block">
+            Портфель постачання ГК «...» електричної енергії складє більш ніж 50 підприємств в Україні
+        </div>
+    </aside>
+
+    <section id="news">
+        <h1>Новини</h1>
+        <div id="news-blocks">
+            <article>
+                <div class="news-date">26 вересня 2023</div>
+                З 25 вересня клієнти Черкасигаз обслуговуються через сервіси ГК «Нафтогаз України»
+            </article>
+            <article>
+                <div class="news-date">15 серпня 2023</div>
+                З 15 серпня клієнти Івано-Франківськгазу, Хмельницькгазу та Миколаївгазу обслуговуватимуться через
+                сервіси ГК «Нафтогаз України»
+            </article>
+            <article>
+                <div class="news-date">26 вересня 2023</div>
+                Оформлюйте субсидію за спрощеною процедурою: нові вимоги та корисні посилання
+            </article>
+        </div>
+    </section>
+
+    <table>
+        <caption>
+            <h2>Історія розрахунків</h2>
+        </caption>
+        <thead>
+        <tr id="table-topics">
+            <th colspan="3">
+                Умови
+            </th>
+            <th id="table-topic-green" rowspan="2">
+                Сплачено<br>всього, грн
+            </th>
+            <th colspan="3">
+                Споживання газу
+            </th>
+            <th colspan="3">
+                Розрахунок з ТОВ «ГК «...»
+            </th>
+        </tr>
+        <tr>
+            <td>Рік</td>
+            <td>Місяць</td>
+            <td>Ціна м3,грн</td>
+            <td>Моє показання</td>
+            <td>Спожито всього, м3</td>
+            <td>Об’єм для розрахунку, м3</td>
+            <td>Нараховано, грн</td>
+            <td>Оплата, грн</td>
+            <td>Баланс, грн</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2023</td>
+            <td>Жовтень</td>
+            <td>7.99</td>
+            <td>26.00</td>
+            <td>58</td>
+            <td>2.00</td>
+            <td>2.00</td>
+            <td>15.91</td>
+            <td>16.00</td>
+            <td>-1.82</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>Вересень</td>
+            <td>7.99</td>
+            <td>16.00</td>
+            <td>56</td>
+            <td>2.00</td>
+            <td>2.00</td>
+            <td>15.91</td>
+            <td>16.00</td>
+            <td>-2.06</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>Серпень</td>
+            <td>7.99</td>
+            <td>24.00</td>
+            <td>54</td>
+            <td>-5.00</td>
+            <td>-5.00</td>
+            <td>-39.78</td>
+            <td>24.00</td>
+            <td>-10.15</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>Липень</td>
+            <td>7.99</td>
+            <td>40.00</td>
+            <td>59</td>
+            <td>12.00</td>
+            <td>12.00</td>
+            <td>95.48</td>
+            <td>50.00</td>
+            <td>-89.93</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <section id="promotion">
+        <h2>
+            Заміна газового обладнання за привабливою ціною
+        </h2>
+
+        <img src="https://static.104.ua/build/individual/cabinet/img_global/banners/banner_kotel_104_ua.jpg"
+             alt="Заміна газового обладнання за привабливою ціною"
+             title="Заміна газового обладнання за привабливою ціною"
+             height="400"
+             width="600"/>
+    </section>
+
+    <h2>Форма зворотнього зв’язку</h2>
+    <form id="form" accept-charset="utf-8 iso-8859-1">
+        <div class="form-input">
+            <label for="user-name">ПІБ</label><br/>
+            <input type="text" name="user-name" id="user-name" placeholder="Як ми можемо до вас звертатися?"
+                   size="30" maxlength="255" required>
+        </div>
+
+        <div class="form-input">
+            <label for="user-email">Пошта</label><br/>
+            <input type="email" name="user-email" id="user-email" placeholder="Як ми можемо з вами зв'язатися?"
+                   size="30" required/>
+        </div>
+
+        <div class="form-input">
+            <label for="user-age">Вік</label><br/>
+            <input type="number" name="user-age" id="user-age" min="0" max="100" required/>
+        </div>
+
+        <div class="form-input" id="form-radio-button">
+            Стать
+            <br/>
+            <input type="radio" id="man" name="sex" required>
+            <label for="man">Чоловік</label>
+            <input type="radio" id="woman" name="sex" required>
+            <label for="woman">Жінка</label>
+            <input type="radio" id="undefined" name="sex" required>
+            <label for="undefined">Не визначився</label>
+        </div>
+
+        <div class="form-input" id="form-select">
+            <label for="user-topic-call">Тип звернення</label><br/>
+            <select name="user-topic-call" id="user-topic-call" required>
+                <option value disabled="disabled" selected="selected">Оберіть тип звернення</option>
+                <option value="1">Скарга</option>
+                <option value="2">Пропозиція</option>
+                <option value="3">Запитання</option>
+                <option value="4">Інше</option>
+            </select>
+        </div>
+
+        <div class="form-input" id="form-textarea">
+            <label for="user-text">Напишіть нам</label><br/>
+            <textarea name="user-text" id="user-text" cols="30" rows="5"
+                      placeholder="Текст вашого повідомлення" required></textarea>
+        </div>
+
+        <div class="form-button">
+            <input type="checkbox" name="user-processing-info-agree" id="user-processing-info-agree" required/>
+            <label for="user-processing-info-agree">Погоджуюся на обробку персональних даних</label>
+        </div>
+
+        <div class="form-button">
+            <button type="submit"><b>Відправити</b></button>
+        </div>
+    </form>
+
+
+</main>
+
+<footer>
+    <p>
+        client@gas.ua
+        <br/>098-300-2-888
+        <br/>м. Київ, вул. Шолуденка, 1
+    </p>
+    Copyright © 2023
+    <a href="https://gas.ua/uk/home/officialInformation" target=”_blank”>Офіційна інформація</a>
+    <a href="https://gas.ua/uk/privacy-policy" target=”_blank”>Політика конфіденційності</a>
+</footer>
+
+
+</body>
+</html>

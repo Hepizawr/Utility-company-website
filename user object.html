@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Особистий кабінет</title>
+    <link href="css/cabinet_style.css" rel="stylesheet">
+    <script async src="js/script.js"></script>
+</head>
+<body>
+<header>
+    <div id="cabinet-header-menu">
+        <div id="object-address">
+            Адреса об'єкта
+        </div>
+        <div class="cabinet-buttons">
+            <a class="cabinet-button" href="personal%20cabinet.html">
+                <img src="img/Change sing.png" height="30"/>
+                <b>Змінити об'єкт</b>
+            </a>
+
+            <a class="cabinet-button" href="#">
+                <img src="img/Account.png" height="40"/>
+                <b>Ім'я користувача</b>
+            </a>
+        </div>
+    </div>
+</header>
+
+<aside>
+
+    <a id="logo" href="main.html">
+        <img src="img/Logo img.png" alt="logo" height="40" width="40"/>
+        <b>ТОВ «Газова компанія»</b>
+    </a>
+    <nav>
+        <!--        <ul>-->
+        <!--            <li><a href="#">Головна</a></li>-->
+        <!--            <li><a href="#">Історія розрахунків</a></li>-->
+        <!--            <li><a href="#">Акти звірки</a></li>-->
+        <!--        </ul>-->
+        <a href="#">Головна</a>
+        <a href="#">Історія розрахунків</a>
+        <a href="#">Акти звірки</a>
+    </nav>
+</aside>
+
+<main>
+    <div class="cabinet-object-blocks">
+        <div class="cabinet-object-block">
+            Інформація об об'єкті
+        </div>
+        <div class="cabinet-object-block">
+            Інформація об об'єкті
+        </div>
+    </div>
+
+    <div class="cabinet-object-buttons">
+        <a href="" class="cabinet-object-button" id="testimony-button">
+            Внести показання
+        </a>
+        <a href="" class="cabinet-object-button" id="pay-button">
+            Оплатити
+        </a>
+    </div>
+
+    <div class="pop_up" id="pop_up_testimony">
+        <div class="pop_up_container">
+            <div class="pop_up_header">
+                Внесіть показання для передачі оператору ГРМ
+                <div class="pop_up_close" id="pop_up_testimony_close">
+                    &#10006
+                </div>
+            </div>
+            <div class="pop_up_body">
+                <form id="form_testimony">
+                    <div class="pop_up_form_block">
+                        <label for="past-testimony">Попереднє показання</label>
+                        <input type="number" name="past-testimony" id="past-testimony" placeholder="0058" readonly>
+                    </div>
+
+                    <div class="pop_up_form_block">
+                        <label for="testimony">Внесіть поточне показання</label>
+                        <input type="text" name="testimony" id="testimony" placeholder="Введіть показання" required>
+                    </div>
+                    <button type="submit" id="pop_up_testimony_button"><b>Відправити</b></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="pop_up" id="pop_up_bill">
+        <div class="pop_up_container">
+            <div class="pop_up_header">
+                Оплата за послуги
+                <div class="pop_up_close" id="pop_up_bill_close">
+                    &#10006
+                </div>
+            </div>
+            <div class="pop_up_body">
+                <form id="form_bill">
+                    <div class="pop_up_form_block">
+                        <label for="past_bill">Стан рахунку</label>
+                        <input type="number" name="past_bill" id="past_bill" value="-100.92" readonly>
+                    </div>
+
+                    <div class="pop_up_form_block">
+                        <label for="bill">Внесіть суму оплати</label>
+                        <input type="text" name="bill" id="bill" placeholder="Введіть суму" value="-100.92" required>
+                    </div>
+                    <button type="submit" id="pop_up_bill_button"><b>Сплатити</b></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</main>
+
+<footer>
+    Copyright © 2023
+</footer>
+
+</body>
+</html>
